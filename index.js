@@ -15,7 +15,7 @@ ipc.on('save-dialog', function(event) {
 
 var mainWindows = null;
 app.on('ready', function() {
-    mainWindow = new BrowserWindow({ width: 400, height: 100 });
+    mainWindow = new BrowserWindow({ width: 400, height: 150 });
     mainWindow.loadURL(`file://${__dirname}/index.html`);
     mainWindow.on('closed', () => {
         mainWindow = null;
